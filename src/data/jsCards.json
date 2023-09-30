@@ -1,15 +1,32 @@
-{
-  "title": "js flash cards",
-  "flash_cards": [
-    {
-      "id": 1,
-      "question": "how to you express one is greater than zero?",
-      "answer": "1 > 0"
-    },
-    {
-      "id": 2,
-      "question": "how do you declare variables?",
-      "answer": "var/let"
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "question": "how to you express one is greater than zero?",
+    "answer": "1 > 0"
+  },
+  {
+    "id": 2,
+    "question": "how do you declare variables?",
+    "answer": "var/let"
+  },
+  {
+    "id": 3,
+    "question": "how do you declare variables?",
+    "answer": "var/let"
+  },
+  {
+    "id": 4,
+    "question": "how do you declare variables?",
+    "answer": "var/let"
+  },
+  {
+    "id": 5,
+    "question": "how do you declare variables?",
+    "answer": "var/let"
+  },
+  {
+    "id": 6,
+    "question": "how do you declare variables?",
+    "answer": "var/let"
+  }
+]
