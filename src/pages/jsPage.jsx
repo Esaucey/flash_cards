@@ -6,7 +6,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/system/Unstable_Grid';
 import { Container } from '@mui/material';
-import "./jsPage.css";
+// import "./jsPage.css";
 import ReactCardFlip from "react-card-flip";
 
 export const JsPage = () => {
@@ -18,8 +18,9 @@ export const JsPage = () => {
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 2, sm: 9, md: 12 }}>
           {jsData.map((item) => (
             <Grid xs={2} sm={3} key={item.id} className="flip-card">
-              <ReactCardFlip isFlipped={flip} flipDirection="vertical">
-              <Card variant="outlined" className="">
+              
+              <Card variant="outlined" className="" >
+                <ReactCardFlip isFlipped={flip} flipDirection="vertical">
                 <CardContent sx={{ padding: "0" }} className="flip-card-front" onClick={() => setFlip(!flip)}>
                   <Typography variant="h5">
                     {item.question}
@@ -30,8 +31,9 @@ export const JsPage = () => {
                     {item.answer}
                   </Typography>
                 </CardContent> 
+                </ReactCardFlip>
               </Card>
-              </ReactCardFlip>
+              
             </Grid>
           ))}
         </Grid>
