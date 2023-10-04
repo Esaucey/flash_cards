@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/system/Unstable_Grid';
 import { useState } from 'react'
 import { Container } from '@mui/material';
-import './cardFlip.css';
+import './cardFlip.css'
 
 
 export default function JsCard({ jsData }) {
@@ -16,7 +16,7 @@ export default function JsCard({ jsData }) {
 
   return (
     <Grid xs={2} sm={3}>
-      <Card variant="outlined" sx={{ minHeight: "250px" }} onClick={() => setFlip(!flip)} className={`card ${flip ? 'flip' : ''}`}>
+      <div onClick={() => setFlip(!flip)} className={`card ${ flip ? 'flip' : ''}`}>
         <CardContent className="frontFlip">
           <Typography variant="h5">
             {jsData.question}
@@ -27,7 +27,7 @@ export default function JsCard({ jsData }) {
             {jsData.answer}
           </Typography>
         </CardContent>
-      </Card>
+      </div>
     </Grid>
   )
 }
