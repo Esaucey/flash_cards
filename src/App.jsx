@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -5,6 +6,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 import { JsPage } from './pages/jsCardList'
 import { Box, Container } from '@mui/material'
+import Nav from './components/Nav'
+import './App.css'
+import { HtmlPage } from './pages/htmlCardList'
 
 
 function App() {
@@ -12,9 +16,11 @@ function App() {
 
   return (
     <Router>
+        <Nav />
       <Routes>
         <Route path="/" element={<h1>home page</h1>}></Route>
         <Route path="/js-quiz" element={<JsPage />}></Route>
+        <Route path="/html-quiz" element={<HtmlPage />}></Route>
       </Routes>
     </Router>
   )

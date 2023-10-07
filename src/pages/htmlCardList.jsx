@@ -1,19 +1,19 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
-import jsData from '../data/jsCards.json';
+import htmlData from '../data/htmlCards.json';
 import Box from '@mui/system/Box';
 import Grid from '@mui/system/Unstable_Grid';
 import { Container, Pagination } from '@mui/material';
 import usePagination from "../components/Pagination";
 import Card from '../components/Card'
 
-export const JsPage = () => {
+export const HtmlPage = () => {
 
   let [page, setPage] = useState(1);
   const PER_PAGE = 10;
 
-  const count = Math.ceil(jsData.length / PER_PAGE);
-  const _DATA = usePagination(jsData, PER_PAGE);
+  const count = Math.ceil(htmlData.length / PER_PAGE);
+  const _DATA = usePagination(htmlData, PER_PAGE);
 
   const handleChange = (e, p) => {
     setPage(p);
@@ -28,17 +28,14 @@ export const JsPage = () => {
             return (<Card cardData={ item } key={item.id }/>)
           })}
         </Grid>
-        <div style={{display: "flex", justifyContent: "center"}}>
-          <Pagination
-            count={count}
-            size="large"
-            page={page}
-            variant="outlined"
-            shape="rounded"
-            onChange={handleChange}
-            sx={{alignContent: "flex-end"}}
-          />
-        </div>
+        <Pagination
+        count={count}
+        size="large"
+        page={page}
+        variant="outlined"
+        shape="rounded"
+        onChange={handleChange}
+      />
       </Container>
     </Box>
   )
