@@ -15,13 +15,12 @@ export default function JsCard({ cardData }) {
     <Grid xs={2} sm={4}>
       <div onClick={() => setFlip(!flip)} className={`card ${ flip ? 'flip' : ''}`}>
         <CardContent className="frontFlip">
-          {cardData.id}
-          <Typography variant="h5">
+          <Typography variant="h6" sx={{textAlign: "left"}}>
             {cardData.question}
           </Typography>
         </CardContent>
         <CardContent className="backFlip">
-          <Typography sx={{ fontSize: "2em" }} variant="body2">
+          <Typography sx={{ fontSize: "1.5em" }} variant="body2">
             {cardData.answer}
           </Typography>
         </CardContent>

@@ -18,9 +18,9 @@ export default function Nav() {
 }
 
 const ulStyle = {
-  padding: "0",
+  padding: "2rem",
   listStyleType: "none",
   display: "flex",
   justifyContent: "space-evenly",
-  flexWrap: "wrap"
+  flexWrap: "wrap",
 }

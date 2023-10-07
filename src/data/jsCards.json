@@ -1,67 +1,72 @@
 [
   {
     "id": 1,
-    "question": "how to you express one is greater than zero?",
-    "answer": "1 > 0"
+    "question": "A collection of key-value pairs.",
+    "answer": "Object"
   },
   {
     "id": 2,
-    "question": "how do you declare variables?",
-    "answer": "var/let"
+    "question": "A named storage location for data values.",
+    "answer": "Variable"
   },
   {
     "id": 3,
-    "question": "how do you declare variables?",
-    "answer": "var/let"
+    "question": "A reusable block of code.",
+    "answer": "Function"
   },
   {
     "id": 4,
-    "question": "how do you declare variables?",
-    "answer": "var/let"
+    "question": "A collection of data elements.",
+    "answer": "Array"
   },
   {
     "id": 5,
-    "question": "how do you declare variables?",
-    "answer": "var/let"
+    "question": "It represents web page structure.",
+    "answer": "DOM - Document Object Model"
   },
   {
     "id": 6,
-    "question": "how do you declare variables?",
-    "answer": "var/let"
+    "question": "A user or browser action.",
+    "answer": "Event"
   },
   {
     "id": 7,
-    "question": "how do you declare variables?",
-    "answer": "var/let"
+    "question": "A function passed as an argument.",
+    "answer": "Callback"
   },
   {
     "id": 8,
-    "question": "how do you declare variables?",
-    "answer": "var/let"
+    "question": "Inner function with access to outer scope.",
+    "answer": "Closure"
   },
   {
     "id": 9,
-    "question": "how do you declare variables?",
-    "answer": "var/let"
+    "question": "Represents an asynchronous operation result.",
+    "answer": "Promise"
   },
   {
     "id": 10,
-    "question": "how do you declare variables?",
-    "answer": "var/let"
+    "question": "Syntactic features in JavaScript used to simplify and make asynchronous code more readable.",
+    "answer": "Async/Await"
   },
   {
     "id": 11,
-    "question": "how do you declare variables?",
-    "answer": "var/let"
+    "question": "The context in which variables are declared and accessed in JavaScript",
+    "answer": "Scope"
   },
   {
     "id": 12,
-    "question": "how do you declare variables?",
-    "answer": "var/let"
+    "question": "Enabling software applications to send request and exchange data or functionality",
+    "answer": "API - Application Programming Interface"
   },
   {
     "id": 13,
-    "question": "how do you declare variables?",
-    "answer": "var/let"
+    "question": "A JavaScript behavior where variable and function declarations are moved to the top of their containing scope during compilation.",
+    "answer": "Hoisting"
+  },
+  {
+    "id": 14,
+    "question": "A function used to create and initialize objects.",
+    "answer": "Constructor"
   }
 ]

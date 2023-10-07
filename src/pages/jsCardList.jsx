@@ -10,7 +10,7 @@ import Card from '../components/Card'
 export const JsPage = () => {
 
   let [page, setPage] = useState(1);
-  const PER_PAGE = 10;
+  const PER_PAGE = 9;
 
   const count = Math.ceil(jsData.length / PER_PAGE);
   const _DATA = usePagination(jsData, PER_PAGE);
@@ -25,7 +25,7 @@ export const JsPage = () => {
       <Container>
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 2, sm: 8, md: 12 }}>
           {_DATA.currentData().map((item) => {
-            return (<Card cardData={ item } key={item.id }/>)
+            return (<Card cardData={ item } key={ item.id }/>)
           })}
         </Grid>
         <div style={{display: "flex", justifyContent: "center"}}>
@@ -36,7 +36,7 @@ export const JsPage = () => {
             variant="outlined"
             shape="rounded"
             onChange={handleChange}
-            sx={{alignContent: "flex-end"}}
+            sx={{padding: "20px"}}
           />
         </div>
       </Container>
