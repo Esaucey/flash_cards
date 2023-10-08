@@ -9,6 +9,7 @@ import { Box, Container } from '@mui/material'
 import Nav from './components/Nav'
 import './App.css'
 import { HtmlPage } from './pages/htmlCardList'
+import Home from './pages/home';
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
     <Router>
         <Nav />
       <Routes>
-        <Route path="/" element={<h1>home page</h1>}></Route>
+        <Route path="/" element={<Home />}></Route>
         <Route path="/js-quiz" element={<JsPage />}></Route>
         <Route path="/html-quiz" element={<HtmlPage />}></Route>
       </Routes>

@@ -8,7 +8,7 @@
   transform: perspective(1000px) rotateY(var(--rotate-y, 0));
   transition: 250ms;
   min-height: 200px;
-  border: 3px solid gray;
+  border: 3px solid rgb(105, 109, 153);
   cursor: pointer;
   background-image: url("https://www.photos-public-domain.com/wp-content/uploads/2012/05/ivory-off-white-paper-texture.jpg");
   background-size: cover;
@@ -16,8 +16,9 @@
 }
 
 .card:hover {
-  box-shadow: 0px 0px 5px 2px rgb(91, 91, 91, 0.5);
+  box-shadow: 0px 0px 5px 2px rgb(134, 188, 235, 0.5);
   translate: 0 -5px;
+  border-color: rgb(134, 188, 235);
 }
 
 .card.flip {

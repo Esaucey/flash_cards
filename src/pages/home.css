@@ -1,0 +1,51 @@
+/* BackgroundAnimation.css */
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #3498db; /* You can customize the particle color */
+  opacity: 0.6;
+  animation: float 5s linear infinite; /* Use a single animation for all particles */
+}
+
+.particle1 {
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.particle2 {
+  width: 30px;
+  height: 30px;
+  animation-delay: 1s;
+}
+
+.particle3 {
+  width: 25px;
+  height: 25px;
+  animation-delay: 2s;
+}
+
+/* Add more particles with different animation delays */
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

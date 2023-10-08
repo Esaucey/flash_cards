@@ -10,7 +10,7 @@ import Card from '../components/Card'
 export const HtmlPage = () => {
 
   let [page, setPage] = useState(1);
-  const PER_PAGE = 10;
+  const PER_PAGE = 9;
 
   const count = Math.ceil(htmlData.length / PER_PAGE);
   const _DATA = usePagination(htmlData, PER_PAGE);
@@ -28,14 +28,17 @@ export const HtmlPage = () => {
             return (<Card cardData={ item } key={item.id }/>)
           })}
         </Grid>
-        <Pagination
-        count={count}
-        size="large"
-        page={page}
-        variant="outlined"
-        shape="rounded"
-        onChange={handleChange}
-      />
+        <div style={{display: "flex", justifyContent: "center"}}>
+          <Pagination
+            count={count}
+            size="large"
+            page={page}
+            variant="outlined"
+            shape="rounded"
+            onChange={handleChange}
+            sx={{padding: "20px"}}
+          />
+        </div>
       </Container>
     </Box>
   )
