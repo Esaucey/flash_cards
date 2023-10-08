@@ -12,6 +12,12 @@
   cursor: pointer;
   background-image: url("https://www.photos-public-domain.com/wp-content/uploads/2012/05/ivory-off-white-paper-texture.jpg");
   background-size: cover;
+  user-select: none;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 5px 2px rgb(91, 91, 91, 0.5);
+  translate: 0 -5px;
 }
 
 .card.flip {
