@@ -1,52 +1,72 @@
 [
   {
     "id": 1,
-    "question": "this is an html card",
-    "answer": "1 > 0"
+    "question": "A block level container (or 'division' of the web page) for content with no semantic meaning.",
+    "answer": "<div>"
   },
   {
     "id": 2,
-    "question": "this is an html card",
-    "answer": "1 > 0"
+    "question": "Tag that surrounds important content that is invisible to the user, but is important to the browser.",
+    "answer": "<head>"
   },
   {
     "id": 3,
-    "question": "this is an html card",
-    "answer": "1 > 0"
+    "question": "Hyperlinks (or just links) take the user to another webpage when they click on it.",
+    "answer": "href"
   },
   {
     "id": 4,
-    "question": "this is an html card",
-    "answer": "1 > 0"
+    "question": "This tag is used in a block of text to force a line break.",
+    "answer": "<br>"
   },
   {
     "id": 5,
-    "question": "this is an html card",
-    "answer": "1 > 0"
+    "question": "HTML comments",
+    "answer": "<!-- This is an HTML comment! -->"
   },
   {
     "id": 6,
-    "question": "this is an html card",
-    "answer": "1 > 0"
+    "question": "This tag creates a black line one pixel thick that runs the all the way across its container.",
+    "answer": "<hr>"
   },
   {
     "id": 7,
-    "question": "this is an html card",
-    "answer": "1 > 0"
+    "question": "The img tag embeds an image into your HTML.",
+    "answer": "<img>"
   },
   {
     "id": 8,
-    "question": "this is an html card",
-    "answer": "1 > 0"
+    "question": "Unordered lists are just lists whose items are denoted with bullet points.",
+    "answer": "<ul>"
   },
   {
     "id": 9,
-    "question": "this is an html card",
-    "answer": "1 > 0"
+    "question": "Ordered lists’ items are denoted with numbers.",
+    "answer": "<ol>"
   },
   {
     "id": 10,
-    "question": "this is an html card",
-    "answer": "1 > 0"
+    "question": "An element for displaying information in rows and columns. Supports headers and footers for labeling columns.",
+    "answer": "<table>"
+  },
+  {
+    "id": 11,
+    "question": "Sets off each row in a table",
+    "answer": "<tr>"
+  },
+  {
+    "id": 12,
+    "question": "Sets off each cell in a row",
+    "answer": "<td>"
+  },
+  {
+    "id": 13,
+    "question": "This tag tells the browser what to display as the page title at the top and tells search engines what the title of your site is.",
+    "answer": "<title>"
+  },
+  {
+    "id": 14,
+    "question": "This tag tells the browser what to display as the page title at the top and tells search engines what the title of your site is.",
+    "answer": "<title>"
   }
 ]
