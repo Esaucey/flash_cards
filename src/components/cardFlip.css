@@ -25,12 +25,18 @@
   --rotate-y: 180deg;
 }
 
+.frontFlip {
+  color: rgb(58, 69, 129);
+}
+
+.backFlip {
+  color: rgb(60, 148, 148);
+  transform: rotateY(180deg);
+}
+
 .frontFlip, .backFlip {
   position: absolute;
   padding: 1rem;
   backface-visibility: hidden;
 }
 
-.backFlip {
-  transform: rotateY(180deg);
-}

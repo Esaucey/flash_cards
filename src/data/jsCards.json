@@ -1,72 +1,91 @@
-[
-  {
-    "id": 1,
-    "question": "A collection of key-value pairs.",
-    "answer": "Object"
-  },
-  {
-    "id": 2,
-    "question": "A named storage location for data values.",
-    "answer": "Variable"
-  },
-  {
-    "id": 3,
-    "question": "A reusable block of code.",
-    "answer": "Function"
-  },
-  {
-    "id": 4,
-    "question": "A collection of data elements.",
-    "answer": "Array"
-  },
-  {
-    "id": 5,
-    "question": "It represents web page structure.",
-    "answer": "DOM - Document Object Model"
-  },
-  {
-    "id": 6,
-    "question": "A user or browser action.",
-    "answer": "Event"
-  },
-  {
-    "id": 7,
-    "question": "A function passed as an argument.",
-    "answer": "Callback"
-  },
-  {
-    "id": 8,
-    "question": "Inner function with access to outer scope.",
-    "answer": "Closure"
-  },
-  {
-    "id": 9,
-    "question": "Represents an asynchronous operation result.",
-    "answer": "Promise"
-  },
-  {
-    "id": 10,
-    "question": "Syntactic features in JavaScript used to simplify and make asynchronous code more readable.",
-    "answer": "Async/Await"
-  },
-  {
-    "id": 11,
-    "question": "The context in which variables are declared and accessed in JavaScript",
-    "answer": "Scope"
-  },
-  {
-    "id": 12,
-    "question": "Enabling software applications to send request and exchange data or functionality",
-    "answer": "API - Application Programming Interface"
-  },
-  {
-    "id": 13,
-    "question": "A JavaScript behavior where variable and function declarations are moved to the top of their containing scope during compilation.",
-    "answer": "Hoisting"
-  },
-  {
-    "id": 14,
-    "question": "A function used to create and initialize objects.",
-    "answer": "Constructor"
-  }
-]
+{
+  "general": [
+    {
+      "id": 1,
+      "question": "A collection of key-value pairs.",
+      "answer": "Object"
+    },
+    {
+      "id": 2,
+      "question": "A named storage location for data values.",
+      "answer": "Variable"
+    },
+    {
+      "id": 3,
+      "question": "A reusable block of code.",
+      "answer": "Function"
+    },
+    {
+      "id": 4,
+      "question": "A collection of data elements.",
+      "answer": "Array"
+    },
+    {
+      "id": 5,
+      "question": "It represents web page structure.",
+      "answer": "DOM - Document Object Model"
+    },
+    {
+      "id": 6,
+      "question": "A user or browser action.",
+      "answer": "Event"
+    },
+    {
+      "id": 7,
+      "question": "A function passed as an argument.",
+      "answer": "Callback"
+    },
+    {
+      "id": 8,
+      "question": "Inner function with access to outer scope.",
+      "answer": "Closure"
+    },
+    {
+      "id": 9,
+      "question": "Represents an asynchronous operation result.",
+      "answer": "Promise"
+    },
+    {
+      "id": 10,
+      "question": "Syntactic features in JavaScript used to simplify and make asynchronous code more readable.",
+      "answer": "Async/Await"
+    },
+    {
+      "id": 11,
+      "question": "The context in which variables are declared and accessed in JavaScript",
+      "answer": "Scope"
+    },
+    {
+      "id": 12,
+      "question": "Enabling software applications to send request and exchange data or functionality",
+      "answer": "API - Application Programming Interface"
+    },
+    {
+      "id": 13,
+      "question": "A JavaScript behavior where variable and function declarations are moved to the top of their containing scope during compilation.",
+      "answer": "Hoisting"
+    },
+    {
+      "id": 14,
+      "question": "A function used to create and initialize objects.",
+      "answer": "Constructor"
+    }
+  ],
+  "regEx": [
+    {
+      "id": 1,
+      "question": "Perform case-insensitive matching",
+      "answer": "i"
+    },
+    {
+      "id": 2,
+      "question": "Perform a global match (find all matches rather than stopping after the first match)",
+      "answer": "g"
+    },
+    {
+      "id": 3,
+      "question": "Perform multiline matching",
+      "answer": "m"
+    }
+  ]
+}

@@ -3,43 +3,48 @@ import React, { useState } from 'react';
 import jsData from '../data/jsCards.json';
 import Box from '@mui/system/Box';
 import Grid from '@mui/system/Unstable_Grid';
-import { Container, Pagination } from '@mui/material';
+import { Button, Container, Pagination } from '@mui/material';
 import usePagination from "../components/Pagination";
 import Card from '../components/Card'
+import ShowCards from '../components/showCards';
 
 export const JsPage = () => {
 
   let [page, setPage] = useState(1);
+  let [toggle, setToggle] = useState(null);
+
   const PER_PAGE = 9;
 
-  const count = Math.ceil(jsData.length / PER_PAGE);
-  const _DATA = usePagination(jsData, PER_PAGE);
+  const generalCount = Math.ceil(jsData.general.length / PER_PAGE);
+  const general_DATA = usePagination(jsData.general, PER_PAGE);
+
+  const regExCount = Math.ceil(jsData.regEx.length / PER_PAGE);
+  const regEx_DATA = usePagination(jsData.regEx, PER_PAGE);
 
   const handleChange = (e, p) => {
     setPage(p);
-    _DATA.jump(p);
+    general_DATA.jump(p);
   };
+  const regExHandleChange = (e, p) => {
+    setPage(p);
+    regEx_DATA.jump(p);
+  };
+
+  const switchCards = () => {
+    if (toggle == "general") {
+      return <ShowCards _DATA={general_DATA} count={generalCount} page={page} handleChange={handleChange} />;
+    } else if (toggle == "regEx") {
+      return <ShowCards _DATA={regEx_DATA} count={regExCount} page={page} handleChange={regExHandleChange} />
+    }
+  }
 
   return (
     <Box>
-      <Container>
-        <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 2, sm: 8, md: 12 }}>
-          {_DATA.currentData().map((item) => {
-            return (<Card cardData={ item } key={ item.id }/>)
-          })}
-        </Grid>
-        <div style={{display: "flex", justifyContent: "center"}}>
-          <Pagination
-            count={count}
-            size="large"
-            page={page}
-            variant="outlined"
-            shape="rounded"
-            onChange={handleChange}
-            sx={{padding: "20px"}}
-          />
-        </div>
+      <Container sx={{margin: "30px"}}>
+          <Button sx={{margin: "0 15px"}} variant="contained" onClick={() => setToggle("general")}>General</Button>
+          <Button sx={{margin: "0 15px"}} variant="contained" onClick={() => setToggle("regEx")}>RegEx</Button>
       </Container>
+      {toggle ? switchCards() : <ShowCards _DATA={general_DATA} count={generalCount} page={page} handleChange={handleChange} />}
     </Box>
   )
 }
